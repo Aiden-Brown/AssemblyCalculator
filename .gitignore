@@ -1,5 +1,5 @@
-./vs
+.vs/
 AssemblyCalculator.sln
-AssemblyCalculator.vcxroj
-AssemblyCalculator.vcxroj.filters
-AssemblyCalculator.vcxroj.user
+AssemblyCalculator.vcxproj
+AssemblyCalculator.vcxproj.filters
+AssemblyCalculator.vcxproj.user
