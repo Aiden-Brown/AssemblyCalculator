@@ -35,3 +35,29 @@ During this time I will be working full time so will be spending approx. 10-15 h
 ### Note:
 As more ideas come to mind and I'm ahead of schedule tasks may be added to the list, but if I'm behind schedule I will not remove some tasks.
 
+# Development Environment
+This will be developed in a Ubuntu Machine running using WSL. I was just looking for something simple to use, I was planning on using VMware Workstation Personal as work uses VMware however there were a lot of loop holes to jump through to find the right one and the process started to become a long one so using WSL was easy, simple and fit the requirements of the project.
+
+# Commands to run
+To run the project you will need to do the following (assuming you are connected to the Linux machine you have running):
+
+- sudo apt-get update -y
+- sudo apt-get install -y nasm
+
+This allows you to download an assembler that works on Linux machines. From what I could read this doesn't work for all Linux machines and is dependent on the Linux OS you have downloaded.
+
+You can check if they have downloaded correctly by typing "nasm -v" and "ld -v" to check if the Assembler downloaded and if the linker was downloaded as well. If there are no errors then you are winning and can continue.
+
+To then get a program to run the next thing that you need to do is Assemble the code, then link the generated object file to an executable one and run it. To do this you need to do the following (Using HelloWorld.asm as an example):
+
+- nasm -f elf32 -o HelloWorld.o HelloWorld.asm
+
+This is telling the assembler to create an object file called HelloWorld.o from HelloWorld.asm. The name of the .o file can be anything you want and doesn't have to match the asm files name. Next you need to link this newly created object file to an executable file. 
+
+- ld -m elf_i386 -o HelloWorld HelloWorld.o
+
+This allows the file to be converted into an executable for the user to be able to run and test the code. Again the name of the executable does not need to be the same. To run the executable you just need to do this:
+
+- ./HelloWorld
+
+and there's the project running.
