@@ -36,7 +36,7 @@ During this time I will be working full time so will be spending approx. 10-15 h
 As more ideas come to mind and I'm ahead of schedule tasks may be added to the list, but if I'm behind schedule I will not remove some tasks.
 
 # Development Environment
-This will be developed in a Ubuntu Machine running using WSL. I was just looking for something simple to use, I was planning on using VMware Workstation Personal as work uses VMware however there were a lot of loop holes to jump through to find the right one and the process started to become a long one so using WSL was easy, simple and fit the requirements of the project.
+This will be developed in a 32 bit Ubuntu Machine using WSL. I was just looking for something simple to use, I was planning on using VMware Workstation Personal as my work uses VMware however there were a lot of loop holes to jump through to find the right one and the process started to become a long one so using WSL was easy, simple and fit the requirements of the project.
 
 # Commands to run
 To run the project you will need to do the following (assuming you are connected to the Linux machine you have running):
