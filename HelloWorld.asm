@@ -14,6 +14,6 @@ _start:                          ; starts the program
         
 
 section .data
-    msg db "Hello, World!"      ; Creates a string with the message "Hello, World!"
+    msg db "Hello, World!", 0xa      ; Creates a string with the message "Hello, World!"
     len equ $ -msg              ; Calculates the length of the string
                                 ; The $ is a pointer and equ is an assignment operator
