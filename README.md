@@ -61,3 +61,13 @@ This allows the file to be converted into an executable for the user to be able 
 - ./HelloWorld
 
 and there's the project running.
+
+# Resources used for studying Assembly
+
+<div>
+    <a href="http://www.staroceans.org/kernel-and-driver/Assembly%20Language%20Step-By-Step%20-%20Programming%20with%20Linux%2C%203rd%20edition%20(Wiley%2C%202009%2C%200470497025).pdf">Assembly Language Step By Step Programming with Linux by Jeff Duntemann</a>
+    <a href="https://download-mirror.savannah.gnu.org/releases/pgubook/ProgrammingGroundUp-1-0-booksize.pdf">Programming From the Ground Up by Jonathan Barlett</a>
+    <a href="http://www.staroceans.org/kernel-and-driver/The.Art.of.Assembly.Language.2nd.Edition.pdf">The Art of Assembly Language 2nd Edition by Randall Hyde</a>
+    <a href="https://docs.oracle.com/cd/E19641-01/802-1948/802-1948.pdf">x86 Assembly Language Reference Manual by SunSoft</a>
+    <a href="http://www.egr.unlv.edu/~ed/assembly64.pdf">x86-64 Assembly Language Programming with Ubuntu by Ed Jorgensen, Ph.D.</a>
+</div>
