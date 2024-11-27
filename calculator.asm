@@ -9,7 +9,7 @@ section .data
 
     num1 dd 1                   ; Creates an int with number 1
     num2 dd 2                   ; Creates an int with number 2
-    ;res dd 0
+    res dd 0
 
 section .text
 global _start                           ; Tells the linker that the entry point is the start label
@@ -17,6 +17,8 @@ _start:                                 ; starts the program
     mov al, [num1]                      ; mov puts the num1 variable in al register
     mov bl, [num2]                      ; add num2 to the al register
     add al, bl                          ; add makes the al register store the result with res
+    mov [res], al                       ; Stores the result of num1 and num2 in res
+    mov cl, [res]                       ; adds the value of res to cl register
     
     ;mov al, 0x30                       ; Should translate it into ascii to be printed
                                         ; but doesn't reverts it back to 0
