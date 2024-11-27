@@ -1,4 +1,6 @@
 section .data
+    ; Will be uncommented once I can get the addition working correctly and printing to console. 
+
     ;msg1 db "What is the first number?", 0xa         ; Creates a string with the message "Hello, World!"
     ;len1 equ $ -msg1                             ; Calculates the length of the string
                                                 ; The $ is a pointer and equ is an assignment operator
@@ -14,8 +16,10 @@ global _start                           ; Tells the linker that the entry point 
 _start:                                 ; starts the program
     mov al, [num1]                      ; mov puts the num1 variable in al register
     mov bl, [num2]                      ; add num2 to the al register
-    add al, bl                         ; add makes the al register store the result with res
+    add al, bl                          ; add makes the al register store the result with res
+    
     ;mov al, 0x30                       ; Should translate it into ascii to be printed
+                                        ; but doesn't reverts it back to 0
     
     mov ebx, 1                          ; Set File descriptor
 
