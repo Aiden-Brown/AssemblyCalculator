@@ -54,6 +54,12 @@ To then get a program to run the next thing that you need to do is Assemble the 
 
 This is telling the assembler to create an object file called HelloWorld.o from HelloWorld.asm. The name of the .o file can be anything you want and doesn't have to match the asm files name. Next you need to link this newly created object file to an executable file. 
 
+To create a debuggable version the assemble the code is this:
+
+- nasm -f elf -o HelloWorld.o HelloWorld.asm
+
+This allows it to be debuggable by gdb which is the debugger I will be using for this project.
+
 - ld -m elf_i386 -o HelloWorld HelloWorld.o
 
 This allows the file to be converted into an executable for the user to be able to run and test the code. Again the name of the executable does not need to be the same. To run the executable you just need to do this:
