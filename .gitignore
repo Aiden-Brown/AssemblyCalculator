@@ -1,5 +1,2 @@
-.vs/
-AssemblyCalculator.sln
-AssemblyCalculator.vcxproj
-AssemblyCalculator.vcxproj.filters
-AssemblyCalculator.vcxproj.user
+calculator.o
+calc
