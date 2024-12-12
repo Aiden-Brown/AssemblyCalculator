@@ -26,6 +26,7 @@ During this time I will be working full time so will be spending approx. 10-15 h
 - [x] Create subtraction capabilities
 - [x] Create Multiplication capabilities
 - [x] Create division capabilities
+- [ ] Use User input when program runs
 - [ ] Allow ability to create powers of numbers
 - [ ] Square Roots
 - [ ] Allow more than 2 numbers for input
